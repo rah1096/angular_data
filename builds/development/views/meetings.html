@@ -1,0 +1,26 @@
+<div class="meetings cf">
+
+  <h1>Add Meeting</h1>
+  <form action="" class="formgroup addmeeting cf"
+    name="myform"
+    ng-submit="addMeeting()"
+    novalidate>
+    <div class="inputwrapper">
+      <input type="text" name="meetingname"
+      placeholder="Meeting name"
+      ng-model="meetingname" ng-required="true">
+    </div>
+    <button type="submit" class="btn"
+      ng-disabled="myform.$invalid">+</button>
+  </form>
+  <br/>
+
+  <h2>Your meetings</h2>
+  <br/>
+  <div class="meeting" ng-repeat="(key, meeting) in meetings">
+    <button class="btn btn-delete tooltip"
+      ng-click="deleteMeeting(key)">
+    <span>Delete this meeting</span></button>
+    <span class="text">{{meeting.name}}</span>
+  </div><!--meetings list-->
+</div>

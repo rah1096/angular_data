@@ -194,7 +194,7 @@ input[type=radio] {
   height: 0;
   overflow: hidden;
 }
-*/
+
 
 p.error {
   color: #C61C6F;
@@ -453,10 +453,10 @@ nav .table {
 nav li.branding a {
   font-size: 1.5em;
   text-align: left;
-  background: #1E9382 url(../images/heerdslogo.svg) 10px center no-repeat;
+  background: #1E9382 10px center no-repeat;
   background-size: 40px 40px;
   color: #A2CFA5;
-  padding: 10px 15px 10px 60px;
+  padding: 10px 15px 10px 15px;
 }
 
 nav ul {
